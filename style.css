@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap");
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Smooch Sans", sans-serif;
+  background-color: #2f2f4b;
+  color: #05e7f1;
+  margin: 0;
+}
+
+header {
+  background-color: #222337;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 50%;
+}
+
+img {
+  width: 40rem;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+  flex-wrap: wrap;
+}
+
+.key {
+  width: 10rem;
+  border: #222337 1rem solid;
+  font-size: 3rem;
+  line-height: 50%;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: all 0.07s ease;
+}
+
+.key span {
+  font-size: 2rem;
+}
+
+.playing {
+  box-shadow: 0 0 2rem #05e7f1;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 700px) {
+  :root {
+    font-size: 7px;
+  }
+
+  img {
+    max-width: 70%;
+    max-height: 10%;
+  }
+
+  header {
+    padding-right: 0.2rem;
+  }
+
+  h1 {
+    line-height: 120%;
+  }
+
+  .key {
+    font-size: 5rem;
+  }
+
+  .key span {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 5px;
+  }
+
+  .key {
+    font-size: 5rem;
+  }
+
+  .key span {
+    font-size: 3rem;
+  }
+}
